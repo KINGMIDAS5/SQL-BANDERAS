@@ -1,0 +1,230 @@
+CREATE DIRECTORY dir_img AS 'D:\tareabd\IMG';
+
+CREATE TABLE paises(
+    id_bandera NUMBER PRIMARY KEY,
+    nom_pais VARCHAR2(50) NOT NULL,
+    foto BLOB DEFAULT empty_blob());
+
+TRUNCATE TABLE paises;
+INSERT INTO paises VALUES(1, 'Afganistán', empty_blob());
+INSERT INTO paises VALUES(2, 'Albania', empty_blob());
+INSERT INTO paises VALUES(3, 'Alemania', empty_blob());
+INSERT INTO paises VALUES(4, 'Andorra', empty_blob());
+INSERT INTO paises VALUES(5, 'Angola', empty_blob());
+INSERT INTO paises VALUES(6, 'Antigua y Barbuda', empty_blob());
+INSERT INTO paises VALUES(7, 'Arabia Saudita', empty_blob());
+INSERT INTO paises VALUES(8, 'Argelia', empty_blob());
+INSERT INTO paises VALUES(9, 'Argentina', empty_blob());
+INSERT INTO paises VALUES(10, 'Armenia', empty_blob());
+INSERT INTO paises VALUES(11, 'Australia', empty_blob());
+INSERT INTO paises VALUES(12, 'Austria', empty_blob());
+INSERT INTO paises VALUES(13, 'Azerbaiyán', empty_blob());
+INSERT INTO paises VALUES(14, 'Bahamas', empty_blob());
+INSERT INTO paises VALUES(15, 'Bangladés', empty_blob());
+INSERT INTO paises VALUES(16, 'Barbados', empty_blob());
+INSERT INTO paises VALUES(17, 'Baréin', empty_blob());
+INSERT INTO paises VALUES(18, 'Bélgica', empty_blob());
+INSERT INTO paises VALUES(19, 'Belice', empty_blob());
+INSERT INTO paises VALUES(20, 'Benín', empty_blob());
+INSERT INTO paises VALUES(21, 'Bielorrusia', empty_blob());
+INSERT INTO paises VALUES(22, 'Birmania', empty_blob());
+INSERT INTO paises VALUES(23, 'Bolivia', empty_blob());
+INSERT INTO paises VALUES(24, 'Bosnia y Herzegovina', empty_blob());
+INSERT INTO paises VALUES(25, 'Botsuana', empty_blob());
+INSERT INTO paises VALUES(26, 'Brasil', empty_blob());
+INSERT INTO paises VALUES(27, 'Brunéi', empty_blob());
+INSERT INTO paises VALUES(28, 'Bulgaria', empty_blob());
+INSERT INTO paises VALUES(29, 'Burkina Faso', empty_blob());
+INSERT INTO paises VALUES(30, 'Burundi', empty_blob());
+INSERT INTO paises VALUES(31, 'Bután', empty_blob());
+INSERT INTO paises VALUES(32, 'Cabo Verde', empty_blob());
+INSERT INTO paises VALUES(33, 'Camboya', empty_blob());
+INSERT INTO paises VALUES(34, 'Camerún', empty_blob());
+INSERT INTO paises VALUES(35, 'Canadá', empty_blob());
+INSERT INTO paises VALUES(36, 'Catar', empty_blob());
+INSERT INTO paises VALUES(37, 'República Centroafricana', empty_blob());
+INSERT INTO paises VALUES(38, 'Chad', empty_blob());
+INSERT INTO paises VALUES(39, 'República Checa', empty_blob());
+INSERT INTO paises VALUES(40, 'Chile', empty_blob());
+INSERT INTO paises VALUES(41, 'China', empty_blob());
+INSERT INTO paises VALUES(42, 'Chipre', empty_blob());
+INSERT INTO paises VALUES(43, 'Colombia', empty_blob());
+INSERT INTO paises VALUES(44, 'Comoras', empty_blob());
+INSERT INTO paises VALUES(45, 'República del Congo', empty_blob());
+INSERT INTO paises VALUES(46, 'República Democrática del Congo', empty_blob());
+INSERT INTO paises VALUES(47, 'Corea del Norte', empty_blob());
+INSERT INTO paises VALUES(48, 'Corea del Sur', empty_blob());
+INSERT INTO paises VALUES(49, 'Costa de Marfil', empty_blob());
+INSERT INTO paises VALUES(50, 'Costa Rica', empty_blob());
+INSERT INTO paises VALUES(51, 'Croacia', empty_blob());
+INSERT INTO paises VALUES(52, 'Cuba', empty_blob());
+INSERT INTO paises VALUES(53, 'Dinamarca', empty_blob());
+INSERT INTO paises VALUES(54, 'Dominica', empty_blob());
+INSERT INTO paises VALUES(55, 'República Dominicana', empty_blob());
+INSERT INTO paises VALUES(56, 'Ecuador', empty_blob());
+INSERT INTO paises VALUES(57, 'Egipto', empty_blob());
+INSERT INTO paises VALUES(58, 'El Salvador', empty_blob());
+INSERT INTO paises VALUES(59, 'Emiratos Árabes Unidos', empty_blob());
+INSERT INTO paises VALUES(60, 'Eritrea', empty_blob());
+INSERT INTO paises VALUES(61, 'Eslovaquia', empty_blob());
+INSERT INTO paises VALUES(62, 'Eslovenia', empty_blob());
+INSERT INTO paises VALUES(63, 'España', empty_blob());
+INSERT INTO paises VALUES(64, 'Estados Unidos', empty_blob());
+INSERT INTO paises VALUES(65, 'Estonia', empty_blob());
+INSERT INTO paises VALUES(66, 'Etiopía', empty_blob());
+INSERT INTO paises VALUES(67, 'Filipinas', empty_blob());
+INSERT INTO paises VALUES(68, 'Finlandia', empty_blob());
+INSERT INTO paises VALUES(69, 'Fiyi', empty_blob());
+INSERT INTO paises VALUES(70, 'Francia', empty_blob());
+INSERT INTO paises VALUES(71, 'Gabón', empty_blob());
+INSERT INTO paises VALUES(72, 'Gambia', empty_blob());
+INSERT INTO paises VALUES(73, 'Georgia', empty_blob());
+INSERT INTO paises VALUES(74, 'Ghana', empty_blob());
+INSERT INTO paises VALUES(75, 'Granada', empty_blob());
+INSERT INTO paises VALUES(76, 'Grecia', empty_blob());
+INSERT INTO paises VALUES(77, 'Guatemala', empty_blob());
+INSERT INTO paises VALUES(78, 'Guinea', empty_blob());
+INSERT INTO paises VALUES(79, 'Guinea-Bisáu', empty_blob());
+INSERT INTO paises VALUES(80, 'Guinea Ecuatorial', empty_blob());
+INSERT INTO paises VALUES(81, 'Guyana', empty_blob());
+INSERT INTO paises VALUES(82, 'Haití', empty_blob());
+INSERT INTO paises VALUES(83, 'Honduras', empty_blob());
+INSERT INTO paises VALUES(84, 'Hungría', empty_blob());
+INSERT INTO paises VALUES(85, 'India', empty_blob());
+INSERT INTO paises VALUES(86, 'Indonesia', empty_blob());
+INSERT INTO paises VALUES(87, 'Irak', empty_blob());
+INSERT INTO paises VALUES(88, 'Irán', empty_blob());
+INSERT INTO paises VALUES(89, 'Irlanda', empty_blob());
+INSERT INTO paises VALUES(90, 'Islandia', empty_blob());
+INSERT INTO paises VALUES(91, 'Israel', empty_blob());
+INSERT INTO paises VALUES(92, 'Italia', empty_blob());
+INSERT INTO paises VALUES(93, 'Jamaica', empty_blob());
+INSERT INTO paises VALUES(94, 'Japón', empty_blob());
+INSERT INTO paises VALUES(95, 'Jordania', empty_blob());
+INSERT INTO paises VALUES(96, 'Kazajistán', empty_blob());
+INSERT INTO paises VALUES(97, 'Kenia', empty_blob());
+INSERT INTO paises VALUES(98, 'Kirguistán', empty_blob());
+INSERT INTO paises VALUES(99, 'Kiribati', empty_blob());
+INSERT INTO paises VALUES(100, 'Kuwait', empty_blob());
+INSERT INTO paises VALUES(101, 'Laos', empty_blob());
+INSERT INTO paises VALUES(102, 'Lesoto', empty_blob());
+INSERT INTO paises VALUES(103, 'Letonia', empty_blob());
+INSERT INTO paises VALUES(104, 'Líbano', empty_blob());
+INSERT INTO paises VALUES(105, 'Liberia', empty_blob());
+INSERT INTO paises VALUES(106, 'Libia', empty_blob());
+INSERT INTO paises VALUES(107, 'Liechtenstein', empty_blob());
+INSERT INTO paises VALUES(108, 'Lituania', empty_blob());
+INSERT INTO paises VALUES(109, 'Luxemburgo', empty_blob());
+INSERT INTO paises VALUES(110, 'Macedonia del Norte', empty_blob());
+INSERT INTO paises VALUES(111, 'Madagascar', empty_blob());
+INSERT INTO paises VALUES(112, 'Malasia', empty_blob());
+INSERT INTO paises VALUES(113, 'Malaui', empty_blob());
+INSERT INTO paises VALUES(114, 'Maldivas', empty_blob());
+INSERT INTO paises VALUES(115, 'Mali', empty_blob());
+INSERT INTO paises VALUES(116, 'Malta', empty_blob());
+INSERT INTO paises VALUES(117, 'Marruecos', empty_blob());
+INSERT INTO paises VALUES(118, 'Islas Marshall', empty_blob());
+INSERT INTO paises VALUES(119, 'Mauricio', empty_blob());
+INSERT INTO paises VALUES(120, 'Mauritania', empty_blob());
+INSERT INTO paises VALUES(121, 'México', empty_blob());
+INSERT INTO paises VALUES(122, 'Micronesia', empty_blob());
+INSERT INTO paises VALUES(123, 'Moldavia', empty_blob());
+INSERT INTO paises VALUES(124, 'Mónaco', empty_blob());
+INSERT INTO paises VALUES(125, 'Mongolia', empty_blob());
+INSERT INTO paises VALUES(126, 'Montenegro', empty_blob());
+INSERT INTO paises VALUES(127, 'Mozambique', empty_blob());
+INSERT INTO paises VALUES(128, 'Namibia', empty_blob());
+INSERT INTO paises VALUES(129, 'Nauru', empty_blob());
+INSERT INTO paises VALUES(130, 'Nepal', empty_blob());
+INSERT INTO paises VALUES(131, 'Nicaragua', empty_blob());
+INSERT INTO paises VALUES(132, 'Níger', empty_blob());
+INSERT INTO paises VALUES(133, 'Nigeria', empty_blob());
+INSERT INTO paises VALUES(134, 'Noruega', empty_blob());
+INSERT INTO paises VALUES(135, 'Nueva Zelanda', empty_blob());
+INSERT INTO paises VALUES(136, 'Omán', empty_blob());
+INSERT INTO paises VALUES(137, 'Países Bajos', empty_blob());
+INSERT INTO paises VALUES(138, 'Pakistán', empty_blob());
+INSERT INTO paises VALUES(139, 'Palaos', empty_blob());
+INSERT INTO paises VALUES(140, 'Palestina', empty_blob());
+INSERT INTO paises VALUES(141, 'Panamá', empty_blob());
+INSERT INTO paises VALUES(142, 'Papúa Nueva Guinea', empty_blob());
+INSERT INTO paises VALUES(143, 'Paraguay', empty_blob());
+INSERT INTO paises VALUES(144, 'Perú', empty_blob());
+INSERT INTO paises VALUES(145, 'Polonia', empty_blob());
+INSERT INTO paises VALUES(146, 'Portugal', empty_blob());
+INSERT INTO paises VALUES(147, 'Reino Unido', empty_blob());
+INSERT INTO paises VALUES(148, 'Ruanda', empty_blob());
+INSERT INTO paises VALUES(149, 'Rumania', empty_blob());
+INSERT INTO paises VALUES(150, 'Rusia', empty_blob());
+INSERT INTO paises VALUES(151, 'Islas Salomón', empty_blob());
+INSERT INTO paises VALUES(152, 'Samoa', empty_blob());
+INSERT INTO paises VALUES(153, 'San Cristóbal y Nieves', empty_blob());
+INSERT INTO paises VALUES(154, 'San Marino', empty_blob());
+INSERT INTO paises VALUES(155, 'San Vicente y las Granadinas', empty_blob());
+INSERT INTO paises VALUES(156, 'Santa Lucía', empty_blob());
+INSERT INTO paises VALUES(157, 'Santo Tomé y Príncipe', empty_blob());
+INSERT INTO paises VALUES(158, 'Senegal', empty_blob());
+INSERT INTO paises VALUES(159, 'Serbia', empty_blob());
+INSERT INTO paises VALUES(160, 'Seychelles', empty_blob());
+INSERT INTO paises VALUES(161, 'Sierra Leona', empty_blob());
+INSERT INTO paises VALUES(162, 'Singapur', empty_blob());
+INSERT INTO paises VALUES(163, 'Siria', empty_blob());
+INSERT INTO paises VALUES(164, 'Somalia', empty_blob());
+INSERT INTO paises VALUES(165, 'Sri Lanka', empty_blob());
+INSERT INTO paises VALUES(166, 'Suazilandia', empty_blob());
+INSERT INTO paises VALUES(167, 'Sudáfrica', empty_blob());
+INSERT INTO paises VALUES(168, 'Sudán', empty_blob());
+INSERT INTO paises VALUES(169, 'Sudán del Sur', empty_blob());
+INSERT INTO paises VALUES(170, 'Suecia', empty_blob());
+INSERT INTO paises VALUES(171, 'Suiza', empty_blob());
+INSERT INTO paises VALUES(172, 'Surinam', empty_blob());
+INSERT INTO paises VALUES(173, 'Tailandia', empty_blob());
+INSERT INTO paises VALUES(174, 'Tanzania', empty_blob());
+INSERT INTO paises VALUES(175, 'Tayikistán', empty_blob());
+INSERT INTO paises VALUES(176, 'Timor Oriental', empty_blob());
+INSERT INTO paises VALUES(177, 'Togo', empty_blob());
+INSERT INTO paises VALUES(178, 'Tonga', empty_blob());
+INSERT INTO paises VALUES(179, 'Trinidad y Tobago', empty_blob());
+INSERT INTO paises VALUES(180, 'Túnez', empty_blob());
+INSERT INTO paises VALUES(181, 'Turkmenistán', empty_blob());
+INSERT INTO paises VALUES(182, 'Turquía', empty_blob());
+INSERT INTO paises VALUES(183, 'Tuvalu', empty_blob());
+INSERT INTO paises VALUES(184, 'Ucrania', empty_blob());
+INSERT INTO paises VALUES(185, 'Uganda', empty_blob());
+INSERT INTO paises VALUES(186, 'Uruguay', empty_blob());
+INSERT INTO paises VALUES(187, 'Uzbekistán', empty_blob());
+INSERT INTO paises VALUES(188, 'Vanuatu', empty_blob());
+INSERT INTO paises VALUES(189, 'Ciudad del Vaticano', empty_blob());
+INSERT INTO paises VALUES(190, 'Venezuela', empty_blob());
+INSERT INTO paises VALUES(191, 'Vietnam', empty_blob());
+INSERT INTO paises VALUES(192, 'Yemen', empty_blob());
+INSERT INTO paises VALUES(193, 'Yibuti', empty_blob());
+INSERT INTO paises VALUES(194, 'Zambia', empty_blob());
+INSERT INTO paises VALUES(195, 'Zimbabue', empty_blob());
+
+
+
+
+DECLARE
+    v_blob BLOB;
+    v_bfile BFILE;
+BEGIN
+    
+    FOR x IN(SELECT id_bandera
+        FROM paises) LOOP
+        
+        SELECT foto
+        INTO v_blob
+        FROM paises
+        WHERE id_bandera = x.id_bandera FOR UPDATE;
+        
+        v_bfile := BFILENAME('DIR_IMG', x.id_bandera || '.png');
+    
+        if dbms_lob.fileexists(v_bfile) = 1 THEN
+            dbms_lob.fileopen(v_bfile, dbms_lob.file_readonly);
+            dbms_lob.loadfromfile(v_blob, v_bfile, dbms_lob.getlength(v_bfile));
+            dbms_lob.fileclose(v_bfile);
+        END IF;
+    END LOOP;
+END;
+
